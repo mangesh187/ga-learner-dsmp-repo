@@ -16,7 +16,6 @@ print(numerical_var)
 
 # --------------
 # code starts here
-import pandas as pd
 banks = bank.drop(['Loan_ID'],axis = 1)
 print(banks.isnull().sum())
 bank_mode = banks.mode().iloc[0]
@@ -73,8 +72,6 @@ print(big_loan_term)
 
 # --------------
 # code starts here
-import numpy as np
-import pandas as pd
 loan_groupby = banks.groupby(['Loan_Status'])
 columns=['ApplicantIncome','Credit_History']
 loan_groupby = loan_groupby[columns]
