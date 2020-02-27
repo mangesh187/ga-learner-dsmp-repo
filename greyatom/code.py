@@ -62,7 +62,6 @@ def compare_msg(message_d,message_e):
     c_list = [i for i in a_list if i not in b_list]
     final_msg=" ".join(c_list)
     return (final_msg)
-
 secret_msg_3 = compare_msg(message_4,message_5)
 
 
