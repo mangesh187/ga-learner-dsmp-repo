@@ -36,7 +36,6 @@ print(avg_loan_amount)
 
 # --------------
 # code starts here
-
 # code for loan aprroved for self employed
 loan_approved_se = banks.loc[(banks["Self_Employed"]=="Yes")  & (banks["Loan_Status"]=="Y"), ["Loan_Status"]].count()
 print(loan_approved_se)
