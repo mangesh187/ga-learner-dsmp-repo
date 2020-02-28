@@ -34,8 +34,6 @@ avg_loan_amount = pd.pivot_table(banks,index=["Gender","Married","Self_Employed"
 print(avg_loan_amount)
 # code ends here
 
-
-
 # --------------
 # code starts here
 
