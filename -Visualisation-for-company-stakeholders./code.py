@@ -5,11 +5,8 @@ import seaborn as sns
 data=pd.read_csv(path)
 loan_status = data['Loan_Status'].value_counts()
 sns.barplot(y=loan_status)
-
-
 # --------------
 #Code starts here
-
 
 
 
