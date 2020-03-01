@@ -11,8 +11,6 @@ def read_file(path):
     
 #Code starts here
 sample_message=read_file(file_path)
-
-
 # --------------
 #Code starts here
 message_1=read_file(file_path_1)
@@ -26,11 +24,6 @@ def fuse_msg(message_a,message_b):
 
 secret_msg_1 = fuse_msg(message_1,message_2)
 secret_msg_1=str(secret_msg_1)
-
-
-
-
-
 # --------------
 #Code starts here
 message_3=read_file(file_path_3)
