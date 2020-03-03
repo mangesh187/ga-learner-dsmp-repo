@@ -7,16 +7,10 @@ loan_status = data['Loan_Status'].value_counts()
 sns.barplot(y=loan_status)
 # --------------
 #Code starts here
-
-
-
 property_and_loan = data.groupby(['Property_Area','Loan_Status']).size().unstack()
 sns.barplot(y=property_and_loan)
 xlabels=('Property_Area')
 ylabels=('Loan Status')
-
-
-
 # --------------
 #Code starts here
 education_and_loan = data.groupby(['Education','Loan_Status'])
@@ -45,14 +39,8 @@ graduate['LoanAmount'].plot(kind='density', label='Graduate')
 
 #Plotting density plot for 'Graduate'
 not_graduate['LoanAmount'].plot(kind='density',label='Not Graduate')
-
-
-#Code ends here
-
 #For automatic legend display
 plt.legend()
-
-
 # --------------
 #Code starts here
 fig ,(ax_1,ax_2,ax_3) = plt.subplots(nrows = 3 , ncols = 1)
