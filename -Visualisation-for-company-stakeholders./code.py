@@ -20,29 +20,22 @@ education_and_loan.plot(kind='bar')
 plt.xlabel('Education Status')
 plt.ylabel('Loan Status')
 plt.xticks(rotation=45)
-
-
 # --------------
-#Code starts here
-
 #Subsetting the dataframe based on 'Education' column
 graduate=data[data['Education']=='Graduate']
-
 
 #Subsetting the dataframe based on 'Education' column
 not_graduate=data[data['Education']=='Not Graduate']
 
-
 #Plotting density plot for 'Graduate'
 graduate['LoanAmount'].plot(kind='density', label='Graduate')
 
-
 #Plotting density plot for 'Graduate'
 not_graduate['LoanAmount'].plot(kind='density',label='Not Graduate')
+
 #For automatic legend display
 plt.legend()
 # --------------
-#Code starts here
 fig ,(ax_1,ax_2,ax_3) = plt.subplots(nrows = 3 , ncols = 1)
 ax_1.scatter(x=data['ApplicantIncome'],y=data['LoanAmount'])
 plt.title('Applicant Income')
