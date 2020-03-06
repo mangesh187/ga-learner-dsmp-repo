@@ -14,7 +14,6 @@ ylabels=('Loan Status')
 # --------------
 #Code starts here
 education_and_loan = data.groupby(['Education','Loan_Status'])
-
 education_and_loan = education_and_loan.size().unstack()
 education_and_loan.plot(kind='bar')
 plt.xlabel('Education Status')
@@ -45,5 +44,4 @@ TotalIncome=data['ApplicantIncome']+data['CoapplicantIncome']
 data['TotalIncome']=TotalIncome
 ax_3.scatter(x=data['TotalIncome'],y=data['LoanAmount'])
 plt.title('Total Income')
-
-
+# --------------
