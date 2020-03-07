@@ -16,8 +16,6 @@ plt.title('Gender Counts')
 #Code starts here
 alignment = data['Alignment'].value_counts()
 alignment.plot.pie(label='Character Alignment')
-
-
 # --------------
 #Code starts here
 sc_df = data[['Strength','Combat']].copy()
@@ -35,10 +33,6 @@ ic_combat = data['Combat'].std()
 ic_pearson = ic_covariance/(ic_combat*ic_intelligence)
 ic_pearson = ic_pearson.round(2)
 print(ic_pearson)
-
-
-
-
 # --------------
 #Code starts here
 total_high = data['Total'].quantile(0.99)
@@ -47,8 +41,6 @@ super_best = data[data['Total'] > total_high]
 super_best_names = super_best['Name']
 super_best_names = list(super_best_names)
 print(super_best_names)
-
-
 # --------------
 #Code starts here
 fig ,(ax_1,ax_2,ax_3) = plt.subplots(3)
