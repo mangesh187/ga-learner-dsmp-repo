@@ -32,17 +32,13 @@ def substitute_msg(message_c):
     if 'Green' in message_c:
         sub='Data Scientist'
     return(sub)
-    
 secret_msg_2 = substitute_msg(message_3)
 secret_msg_2 = str(secret_msg_2)
 print(secret_msg_2)
-
-
 # --------------
 # File path for message 4  and message 5
 file_path_4
 file_path_5
-
 #Code starts here
 message_4=read_file(file_path_4)
 message_5=read_file(file_path_5)
@@ -70,15 +66,11 @@ def extract_msg(message_f):
     return(final_msg)
 secret_msg_4 = extract_msg(message_6)
 print(secret_msg_4)
-
-
-
 # --------------
 #Secret message parts in the correct order
 message_parts=[secret_msg_3, secret_msg_1, secret_msg_4, secret_msg_2]
 final_path = user_data_dir + '/secret_message.txt'
 secret_msg = " ".join(message_parts)
-
 #Code starts here
 def write_file(secret_msg,path):
     file = open(path,'a+')
