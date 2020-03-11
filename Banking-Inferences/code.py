@@ -23,15 +23,6 @@ sample_mean + margin_of_error)
 true_mean = data['installment'].mean()
 print("True mean :{}".format(true_mean))
 
-
-
-
-
-
-
-
-
-
 # --------------
 import matplotlib.pyplot as plt
 import numpy as np
@@ -47,15 +38,6 @@ for i in range(len(sample_size)):
         m.append(data['installment'].mean())
     mean_series = pd.Series(m)
     axes[i].hist(mean_series)
-  
-
-
-
-
-
-
-
-
 # --------------
 #Importing header files
 
