@@ -52,9 +52,6 @@ if p_value < 0.05:    # alpha value is 0.05 or 5%
    print(" we are rejecting null hypothesis")
 else:
   print("we are failed to reject  null hypothesis")
-
-
-
 # --------------
 #Importing header files
 from statsmodels.stats.weightstats import ztest
@@ -68,20 +65,12 @@ if p_value < 0.05:    # alpha value is 0.05 or 5%
    print(" we are rejecting null hypothesis")
 else:
   print("we are failed to reject  null hypothesis")
-
-
-
-
-
-
-
 # --------------
 #Importing header files
 from scipy.stats import chi2_contingency
 #Critical value 
 critical_value = stats.chi2.ppf(q = 0.95, # Find the critical value for 95% confidence*
                       df = 6)   # Df = number of variable categories(in purpose) - 1
-
 #Code starts here
 yes = data[data['paid.back.loan']=='Yes']['purpose'].value_counts()
 no = data[data['paid.back.loan']=='No']['purpose'].value_counts()
@@ -89,7 +78,6 @@ observed = pd.concat([yes.transpose(),no.transpose()], 1,keys=['Yes','No'])
 chi2, p, dof, ex = chi2_contingency(observed, correction=False)
 print("Critical value")
 print(critical_value)
-
 print("Chi Statistic")
 print(chi2)
 
