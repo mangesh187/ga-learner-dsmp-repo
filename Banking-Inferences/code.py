@@ -22,7 +22,6 @@ confidence_interval =(sample_mean - margin_of_error,
 sample_mean + margin_of_error)
 true_mean = data['installment'].mean()
 print("True mean :{}".format(true_mean))
-
 # --------------
 import matplotlib.pyplot as plt
 import numpy as np
@@ -39,8 +38,8 @@ for i in range(len(sample_size)):
     mean_series = pd.Series(m)
     axes[i].hist(mean_series)
 # --------------
-#Importing header files
 
+#Importing header files
 from statsmodels.stats.weightstats import ztest
 import statsmodels
 #Code starts here
@@ -80,6 +79,4 @@ print("Critical value")
 print(critical_value)
 print("Chi Statistic")
 print(chi2)
-
-
-
+# --------------
