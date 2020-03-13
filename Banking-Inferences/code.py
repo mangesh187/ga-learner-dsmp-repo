@@ -51,8 +51,10 @@ if p_value < 0.05:    # alpha value is 0.05 or 5%
    print(" we are rejecting null hypothesis")
 else:
   print("we are failed to reject  null hypothesis")
+
 # --------------
 #Importing header files
+
 from statsmodels.stats.weightstats import ztest
 
 #Code starts here
@@ -64,7 +66,9 @@ if p_value < 0.05:    # alpha value is 0.05 or 5%
    print(" we are rejecting null hypothesis")
 else:
   print("we are failed to reject  null hypothesis")
+
 # --------------
+
 #Importing header files
 from scipy.stats import chi2_contingency
 #Critical value 
