@@ -37,6 +37,7 @@ for i in range(len(sample_size)):
         m.append(data['installment'].mean())
     mean_series = pd.Series(m)
     axes[i].hist(mean_series)
+    
 # --------------
 
 #Importing header files
