@@ -78,5 +78,4 @@ def write_file(secret_msg,path):
     file.close()
 write_file(secret_msg,final_path)
 print(secret_msg)
-
-
+# --------------
