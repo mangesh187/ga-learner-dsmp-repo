@@ -10,7 +10,6 @@ y = df.list_price
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size =0.3,random_state = 6)
 # code ends here
 
-
 # --------------
 import matplotlib.pyplot as plt
 
@@ -26,8 +25,6 @@ for i in range(0,3):
 
 # code ends here
 
-
-
 # --------------
 # Code starts here
 corr = X_train.corr()
@@ -35,7 +32,6 @@ print(corr)
 X_train.drop(['play_star_rating','val_star_rating'],axis = 1,inplace=True)
 X_test.drop(['play_star_rating','val_star_rating'],axis = 1,inplace=True)
 # Code ends here
-
 
 # --------------
 from sklearn.linear_model import LinearRegression
@@ -49,12 +45,10 @@ mse = mean_squared_error(y_test , y_pred)
 r2 = r2_score(y_test,y_pred)
 # Code ends here
 
-
 # --------------
 # Code starts here
 residual = y_test - y_pred 
 plt.hist(residual)
-
 
 # Code ends here
 
