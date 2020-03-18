@@ -27,6 +27,7 @@ for i in range(0,3):
 
 # --------------
 # Code starts here
+
 corr = X_train.corr()
 print(corr)
 X_train.drop(['play_star_rating','val_star_rating'],axis = 1,inplace=True)
