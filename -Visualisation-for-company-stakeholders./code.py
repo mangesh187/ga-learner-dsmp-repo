@@ -34,6 +34,7 @@ not_graduate['LoanAmount'].plot(kind='density',label='Not Graduate')
 
 #For automatic legend display
 plt.legend()
+
 # --------------
 fig ,(ax_1,ax_2,ax_3) = plt.subplots(nrows = 3 , ncols = 1)
 ax_1.scatter(x=data['ApplicantIncome'],y=data['LoanAmount'])
@@ -45,3 +46,4 @@ data['TotalIncome']=TotalIncome
 ax_3.scatter(x=data['TotalIncome'],y=data['LoanAmount'])
 plt.title('Total Income')
 # --------------
+
