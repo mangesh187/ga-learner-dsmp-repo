@@ -12,6 +12,7 @@ data['Gender'].replace('-','Agender',inplace = True)
 gender_count = data['Gender'].value_counts()
 gender_count.plot(kind = 'bar')
 plt.title('Gender Counts')
+
 # --------------
 #Code starts here
 
