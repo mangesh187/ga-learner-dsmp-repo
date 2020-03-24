@@ -29,6 +29,7 @@ sc_combat = data['Combat'].std()
 sc_pearson = sc_covariance/(sc_combat*sc_strength)
 sc_pearson = sc_pearson.round(2)
 print(sc_covariance)
+
 print(sc_pearson)
 ic_df = data[['Intelligence','Combat']].copy()
 ic_covariance = ic_df.cov().iloc[0,1]
