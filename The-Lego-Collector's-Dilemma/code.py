@@ -51,6 +51,7 @@ r2 = r2_score(y_test,y_pred)
 # --------------
 
 # Code starts here
+
 residual = y_test - y_pred 
 plt.hist(residual)
 
