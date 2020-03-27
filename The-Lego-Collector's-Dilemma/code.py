@@ -45,14 +45,8 @@ regressor.fit(X_train,y_train)
 y_pred = regressor.predict(X_test)
 mse = mean_squared_error(y_test , y_pred)
 r2 = r2_score(y_test,y_pred)
-# Code ends here
-
-
-# --------------
-
-# Code starts here
-
 residual = y_test - y_pred 
 plt.hist(residual)
+# --------------
 
 # Code ends here
