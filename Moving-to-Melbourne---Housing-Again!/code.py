@@ -22,7 +22,6 @@ regressor.fit(X_train,y_train)
 y_pred = regressor.predict(X_test)
 r2 = r2_score(y_test,y_pred)
 
-
 # --------------
 from sklearn.linear_model import Lasso
 
@@ -31,7 +30,6 @@ lasso = Lasso()
 lasso.fit(X_train,y_train)
 lasso_pred = lasso.predict(X_test)
 r2_lasso = r2_score(y_test,lasso_pred)                           
-
 
 # --------------
 from sklearn.linear_model import Ridge
@@ -42,7 +40,6 @@ ridge.fit(X_train,y_train)
 ridge_pred = ridge.predict(X_test)
 r2_ridge = r2_score(y_test,ridge_pred)
 # Code ends here
-
 
 # --------------
 from sklearn.model_selection import cross_val_score
