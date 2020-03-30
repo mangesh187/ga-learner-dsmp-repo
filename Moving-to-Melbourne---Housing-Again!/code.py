@@ -51,7 +51,6 @@ score = cross_val_score(regressor,X_train,y_train ,cv = 10)
 mean_score = score.mean()
 print(mean_score)
 
-
 # --------------
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.pipeline import make_pipeline
