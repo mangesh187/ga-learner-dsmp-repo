@@ -9,7 +9,6 @@ data.hist(['Rating'])
 data=data[data['Rating']<=5]
 #Code ends here
 
-
 # --------------
 # code starts here
 total_null = data.isnull().sum()
@@ -25,12 +24,9 @@ print(missing_data_1)
 
 # code ends here
 
-
 # --------------
 
 #Code starts here
-
-
 
 sns.catplot(x="Category",y="Rating",data=data, kind="box",height = 10)
 sns.xticks=90
