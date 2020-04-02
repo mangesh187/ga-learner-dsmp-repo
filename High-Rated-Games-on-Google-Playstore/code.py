@@ -34,7 +34,6 @@ plt.title('Rating vs Category [BoxPlot]')
 
 #Code ends here
 
-
 # --------------
 #Importing header files
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
@@ -50,8 +49,6 @@ plt.figure(figsize = (10,10))
 sns.regplot(x="Installs", y="Rating",color = 'teal' , data=data)
 plt.title('Rating vs Installs [RegPlot]',size=20)
 #Code ends here
-
-
 
 # --------------
 #Code starts here
