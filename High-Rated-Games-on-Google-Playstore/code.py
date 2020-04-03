@@ -10,6 +10,7 @@ data=data[data['Rating']<=5]
 #Code ends here
 
 # --------------
+
 # code starts here
 total_null = data.isnull().sum()
 percent_null = (total_null/data.isnull().count())
