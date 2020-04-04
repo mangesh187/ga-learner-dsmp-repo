@@ -50,7 +50,9 @@ plt.figure(figsize = (10,10))
 sns.regplot(x="Installs", y="Rating",color = 'teal' , data=data)
 plt.title('Rating vs Installs [RegPlot]',size=20)
 #Code ends here
+
 # --------------
+
 #Code starts here
 print(data['Price'])
 data['Price'] = data['Price'].str.replace('$','')
@@ -78,7 +80,6 @@ gr_mean = gr_mean.sort_values(by=['Rating'])
 # --------------
 
 #Code starts here
-
 
 
 #print(data['Last Updated'])
