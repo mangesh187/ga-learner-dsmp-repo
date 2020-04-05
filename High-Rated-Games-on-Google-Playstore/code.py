@@ -76,11 +76,9 @@ gr_mean = gr_mean.sort_values(by=['Rating'])
 
 #Code ends here
 
-
 # --------------
 
 #Code starts here
-
 
 #print(data['Last Updated'])
 data['Last Updated'] =pd.to_datetime(data['Last Updated'])
