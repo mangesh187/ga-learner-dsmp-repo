@@ -53,8 +53,8 @@ def compare_msg(message_d,message_e):
     return (final_msg)
 secret_msg_3 = compare_msg(message_4,message_5)
 
-
 # --------------
+
 #Code starts here
 message_6 = read_file(file_path_6)
 print(message_6)
@@ -66,7 +66,9 @@ def extract_msg(message_f):
     return(final_msg)
 secret_msg_4 = extract_msg(message_6)
 print(secret_msg_4)
+
 # --------------
+
 #Secret message parts in the correct order
 message_parts=[secret_msg_3, secret_msg_1, secret_msg_4, secret_msg_2]
 final_path = user_data_dir + '/secret_message.txt'
