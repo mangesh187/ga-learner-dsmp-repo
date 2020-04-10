@@ -80,4 +80,5 @@ print("Critical value")
 print(critical_value)
 print("Chi Statistic")
 print(chi2)
+
 # --------------
