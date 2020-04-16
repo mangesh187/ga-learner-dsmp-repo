@@ -8,10 +8,7 @@ X = df.drop('insuranceclaim',axis=1)
 y = df.insuranceclaim
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.2,random_state = 6)
 
-
-# --------------
 import matplotlib.pyplot as plt
-
 
 # Code starts here
 plt.boxplot(X_train['bmi'])
