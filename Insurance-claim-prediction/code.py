@@ -14,10 +14,7 @@ import matplotlib.pyplot as plt
 plt.boxplot(X_train['bmi'])
 q_value = X_train['bmi'].quantile(q=0.95)
 y_train.value_counts()
-# Code ends here
 
-
-# --------------
 import seaborn as sns
 # Cheking the relation of X_train variable
 relation = X_train.corr()
