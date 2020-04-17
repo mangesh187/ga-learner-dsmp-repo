@@ -22,14 +22,10 @@ relation = X_train.corr()
 print(relation)
 
 sns.pairplot(X_train)
-# Code ends here
 
-
-# --------------
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Code starts here
 cols = ['children','sex','region','smoker']
 fig ,axes = plt.subplots(nrows = 2 , ncols = 2)
 for i in range(0,2):
