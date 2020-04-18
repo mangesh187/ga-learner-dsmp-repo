@@ -33,10 +33,7 @@ for i in range(0,2):
         col = cols[i * 2 + j]
 
 sns.countplot(x=X_train[col], hue=y_train, ax=axes[i,j])
-# Code ends here
 
-
-# --------------
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
@@ -44,8 +41,6 @@ from sklearn.metrics import accuracy_score
 
 # parameters for grid search
 parameters = {'C':[0.1,0.5,1,5]}
-
-# Code starts here
 
 # instantiate logistic regression model
 lr=LogisticRegression(random_state=9)
@@ -66,7 +61,6 @@ print(accuracy)
 from sklearn.metrics import roc_auc_score
 from sklearn import metrics
 
-# Code starts here
 score = roc_auc_score(y_test,y_pred)
 print(score)
 y_pred_proba = grid.predict_proba(X_test)[:,1]
@@ -76,6 +70,7 @@ roc_auc = roc_auc_score(y_test,y_pred_proba)
 plt.plot(fpr,tpr,label="Logistic model, auc="+str(roc_auc))
 plt.legend(loc=0)
 plt.show()
+
 # Code ends here
 print(round(score,2))
 print(round(y_pred_proba[0],2))
