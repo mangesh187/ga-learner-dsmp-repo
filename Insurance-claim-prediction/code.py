@@ -44,8 +44,8 @@ parameters = {'C':[0.1,0.5,1,5]}
 
 # instantiate logistic regression model
 lr=LogisticRegression(random_state=9)
-# grid search on logistic regression
 
+# grid search on logistic regression
 grid = GridSearchCV(estimator=lr, param_grid=parameters)
 grid.fit(X_train, y_train)
 
@@ -55,9 +55,6 @@ accuracy= accuracy_score(y_pred,y_test)
 
 print(accuracy)
 
-
-
-# --------------
 from sklearn.metrics import roc_auc_score
 from sklearn import metrics
 
