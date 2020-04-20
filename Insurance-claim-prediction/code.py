@@ -10,15 +10,14 @@ X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.2,random_s
 
 import matplotlib.pyplot as plt
 
-# Code starts here
 plt.boxplot(X_train['bmi'])
 q_value = X_train['bmi'].quantile(q=0.95)
 y_train.value_counts()
 
 import seaborn as sns
+
 # Cheking the relation of X_train variable
 relation = X_train.corr()
-
 print(relation)
 
 sns.pairplot(X_train)
@@ -37,7 +36,6 @@ sns.countplot(x=X_train[col], hue=y_train, ax=axes[i,j])
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-
 
 # parameters for grid search
 parameters = {'C':[0.1,0.5,1,5]}
@@ -68,7 +66,6 @@ plt.plot(fpr,tpr,label="Logistic model, auc="+str(roc_auc))
 plt.legend(loc=0)
 plt.show()
 
-# Code ends here
 print(round(score,2))
 print(round(y_pred_proba[0],2))
 print(round(roc_auc,2))
