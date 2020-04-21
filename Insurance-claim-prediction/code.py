@@ -59,7 +59,9 @@ from sklearn import metrics
 score = roc_auc_score(y_test,y_pred)
 print(score)
 y_pred_proba = grid.predict_proba(X_test)[:,1]
+
 print(y_pred_proba)
+
 fpr, tpr,_ = metrics.roc_curve(y_test ,y_pred_proba)
 roc_auc = roc_auc_score(y_test,y_pred_proba)
 plt.plot(fpr,tpr,label="Logistic model, auc="+str(roc_auc))
