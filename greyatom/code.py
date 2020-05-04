@@ -72,10 +72,11 @@ print(secret_msg_4)
 # --------------
 
 #Secret message parts in the correct order
+
 message_parts=[secret_msg_3, secret_msg_1, secret_msg_4, secret_msg_2]
 final_path = user_data_dir + '/secret_message.txt'
 secret_msg = " ".join(message_parts)
-#Code starts here
+
 def write_file(secret_msg,path):
     file = open(path,'a+')
     file.write(secret_msg)
