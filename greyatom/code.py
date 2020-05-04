@@ -1,8 +1,7 @@
 # --------------
 ##File path for the file 
 file_path 
-#file=open(file_path,'r')
-#sentence=[]
+
 def read_file(path):
     file=open(path,'r')
     sentence=file.read()
@@ -11,8 +10,7 @@ def read_file(path):
     
 #Code starts here
 sample_message=read_file(file_path)
-# --------------
-#Code starts here
+
 message_1=read_file(file_path_1)
 message_2=read_file(file_path_2)
 print(message_1)
@@ -24,27 +22,30 @@ def fuse_msg(message_a,message_b):
 
 secret_msg_1 = fuse_msg(message_1,message_2)
 secret_msg_1=str(secret_msg_1)
-# --------------
-#Code starts here
+
 message_3=read_file(file_path_3)
 print(message_3)
+
 def substitute_msg(message_c):
     if 'Green' in message_c:
         sub='Data Scientist'
     return(sub)
+
 secret_msg_2 = substitute_msg(message_3)
 secret_msg_2 = str(secret_msg_2)
+
 print(secret_msg_2)
-# --------------
+
 # File path for message 4  and message 5
 file_path_4
 file_path_5
-#Code starts here
+
 message_4=read_file(file_path_4)
 message_5=read_file(file_path_5)
 print(message_4)
 print(message_5)
 #-------------------
+
 def compare_msg(message_d,message_e):
     a_list=message_d.split()
     b_list=message_e.split()
