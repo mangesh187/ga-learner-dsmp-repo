@@ -12,10 +12,6 @@ census = np.concatenate((data,new_record))
 
 #Code starts here
 
-
-
-# --------------
-#Code starts here
 age = census[:,0]
 print(age)
 max_age = max(age)
