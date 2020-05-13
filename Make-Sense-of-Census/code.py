@@ -6,6 +6,7 @@ import numpy as np
 data=np.genfromtxt(path,delimiter=",", skip_header=1)
 print(data)
 print(type(data))
+
 #New record
 new_record=[[50,  9,  4,  1,  0,  0, 40,  0]]
 census = np.concatenate((data,new_record))
@@ -19,10 +20,6 @@ min_age = min(age)
 age_mean = age.mean()
 age_std = np.std(age)
 
-
-
-# --------------
-#Code starts here
 race_0 = census[census[:,2]==0]
 race_1 = census[census[:,2]==1]
 race_2 = census[census[:,2]==2]
