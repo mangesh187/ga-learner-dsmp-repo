@@ -35,13 +35,6 @@ print(len_0,len_1,len_2,len_3,len_4)
 
 minority_race = 3
 
-
-
-
-
-
-
-
 # --------------
 #Code starts here
 senior_citizens = census[census[:,0] > 60]
