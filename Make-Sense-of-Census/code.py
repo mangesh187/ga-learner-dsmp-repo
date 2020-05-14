@@ -46,8 +46,7 @@ print(avg_working_hours)
 
 
 
-# --------------
-#Code starts here
+
 high = census[census[:,1]>10]
 low = census[census[:,1]<=10]
 avg_pay_high = high.mean(axis=0)[7]
