@@ -11,8 +11,6 @@ print(type(data))
 new_record=[[50,  9,  4,  1,  0,  0, 40,  0]]
 census = np.concatenate((data,new_record))
 
-#Code starts here
-
 age = census[:,0]
 print(age)
 max_age = max(age)
@@ -35,8 +33,6 @@ print(len_0,len_1,len_2,len_3,len_4)
 
 minority_race = 3
 
-# --------------
-#Code starts here
 senior_citizens = census[census[:,0] > 60]
 working_hours_sum = senior_citizens.sum(axis=0)[6]
 
