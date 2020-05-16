@@ -12,7 +12,9 @@ new_record=[[50,  9,  4,  1,  0,  0, 40,  0]]
 census = np.concatenate((data,new_record))
 
 age = census[:,0]
+
 print(age)
+
 max_age = max(age)
 min_age = min(age)
 age_mean = age.mean()
