@@ -31,7 +31,13 @@ len_1 = len(race_1)
 len_2 = len(race_2)
 len_3 = len(race_3)
 len_4 = len(race_4)
-print(len_0,len_1,len_2,len_3,len_4)
+
+print(len_0)
+print(len_1)
+print(len_2)
+print(len_3)
+print(len_4)
+
 
 minority_race = 3
 
