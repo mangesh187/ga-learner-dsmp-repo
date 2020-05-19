@@ -38,7 +38,6 @@ print(len_2)
 print(len_3)
 print(len_4)
 
-
 minority_race = 3
 
 senior_citizens = census[census[:,0] > 60]
