@@ -5,10 +5,11 @@ from sklearn.model_selection import train_test_split
 
 # path- variable storing file path
 df = pd.read_csv(path)
-
 df.head(5)
+
 X = df.drop('Price',axis=1)
 y = df.Price
+
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size = 0.3,random_state=6)
 corr = X_train.corr()
 print(corr)
