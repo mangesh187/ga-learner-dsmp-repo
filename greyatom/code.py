@@ -1,6 +1,6 @@
 # --------------
 ##File path for the file 
-file_path 
+#file_path 
 
 def read_file(path):
     file=open(path,'r')
@@ -13,9 +13,11 @@ sample_message=read_file(file_path)
 
 message_1=read_file(file_path_1)
 message_2=read_file(file_path_2)
+
 print(message_1)
 print(message_2)
 
+#Creat function fuse_msg
 def fuse_msg(message_a,message_b):
     quotient=(int(message_b)//int(message_a))
     return(quotient)
