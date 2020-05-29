@@ -48,6 +48,5 @@ data['TotalIncome']=TotalIncome
 ax_3.scatter(x=data['TotalIncome'],y=data['LoanAmount'])
 plt.title('Total Income')
 
-
 # --------------
 
