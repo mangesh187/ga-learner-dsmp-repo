@@ -74,6 +74,7 @@ critical_value = stats.chi2.ppf(q = 0.95, # Find the critical value for 95% conf
 yes = data[data['paid.back.loan']=='Yes']['purpose'].value_counts()
 no = data[data['paid.back.loan']=='No']['purpose'].value_counts()
 observed = pd.concat([yes.transpose(),no.transpose()], 1,keys=['Yes','No'])
+
 chi2, p, dof, ex = chi2_contingency(observed, correction=False)
 
 print("Critical value")
