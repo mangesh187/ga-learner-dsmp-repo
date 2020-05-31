@@ -55,4 +55,5 @@ avg_pay_low = low.mean(axis=0)[7]
 
 print(avg_pay_high,avg_pay_low)
 
+
 #------------------------------
