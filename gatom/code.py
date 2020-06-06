@@ -43,7 +43,6 @@ percentage_se=percentage_se[0]
 print(percentage_se)
 
 #percentage of loan for non self employed
-
 percentage_nse = (loan_approved_nse * 100 / 614)
 percentage_nse=percentage_nse[0
                               
