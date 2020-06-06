@@ -2,9 +2,12 @@
 # Import packages
 import numpy as np
 import pandas as pd
+
 from scipy.stats import mode 
+
 # code starts here
-df=pd.read_csv(path)
+
+df = pd.read_csv(path)
 bank = pd.DataFrame(df)
 categorical_var = df.select_dtypes(include = 'object')
 print(categorical_var)
