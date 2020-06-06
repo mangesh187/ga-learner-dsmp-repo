@@ -19,9 +19,11 @@ print(numerical_var)
 
 banks = bank.drop(['Loan_ID'],axis = 1)
 print(banks.isnull().sum())
+
 bank_mode = banks.mode().iloc[0]
 banks.fillna(bank_mode, inplace=True)
 print(banks.isnull().sum())
+
 avg_loan_amount = pd.pivot_table(banks,index=["Gender","Married","Self_Employed"],values=["LoanAmount"],aggfunc=(np.mean))
 print(avg_loan_amount)
 
@@ -36,6 +38,7 @@ print(loan_approved_nse)
 # percentage of loan approved for self employed
 percentage_se = (loan_approved_se * 100 / 614)
 percentage_se=percentage_se[0]
+
 # print percentage of loan approved for self employed
 print(percentage_se)
 
