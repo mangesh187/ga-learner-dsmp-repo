@@ -8,11 +8,15 @@ from scipy.stats import mode
 # code starts here
 
 df = pd.read_csv(path)
+
 bank = pd.DataFrame(df)
+
 categorical_var = df.select_dtypes(include = 'object')
 print(categorical_var)
+
 numerical_var = df.select_dtypes(include = 'number')
 print(numerical_var)
+
 banks = bank.drop(['Loan_ID'],axis = 1)
 print(banks.isnull().sum())
 bank_mode = banks.mode().iloc[0]
