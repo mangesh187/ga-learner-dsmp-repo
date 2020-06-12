@@ -8,6 +8,7 @@ from scipy.stats import mode
 
 # code starts here
 
+# Read the file using the path  
 df = pd.read_csv(path)
 
 bank = pd.DataFrame(df)
