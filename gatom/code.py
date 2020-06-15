@@ -61,6 +61,7 @@ columns=['ApplicantIncome','Credit_History']
 loan_groupby = loan_groupby[columns]
 mean_values = loan_groupby.agg([np.mean])
 print(mean_values)
+                 
                               
 # code ends here
 
