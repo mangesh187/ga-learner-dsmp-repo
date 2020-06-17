@@ -63,5 +63,6 @@ mean_values = loan_groupby.agg([np.mean])
 print(mean_values)
                  
                               
+                              
 # code ends here
 
